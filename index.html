@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f5ef">
+<title>Macvista Pharmaceuticals Pvt Ltd | Medicine Availability</title>
+<meta name="description" content="Macvista Pharmaceuticals Pvt Ltd medicine availability and inventory portal for doctors, pharmacies and medical stores.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="brand-layout.css">
+<link rel="stylesheet" href="catalog-controls.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="provider-section.css">
+<link rel="stylesheet" href="features-section.css">
+<link rel="stylesheet" href="stories-section.css">
+<link rel="stylesheet" href="medicine-carousel.css">
+<link rel="stylesheet" href="homepage-background.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Macvista Pharmaceuticals Pvt Ltd home"><img class="brand-logo" src="/assets/macvista-logo.png" alt="Macvista Pharmaceuticals Pvt Ltd logo"><span>Macvista<span> Pharmaceuticals Pvt Ltd</span><small>WE SERVE PATIENT TO IMPROVE QUALITY OF LIFE</small></span></a>
+    <nav><a href="#home">Home</a><a href="/products.html">Products</a><a href="#how">How it works</a><a href="#admin">Admin</a></nav>
+    <a class="btn btn-dark" href="/products.html" style="text-decoration:none">Check availability <span>→</span></a>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><span></span> TRUSTED INVENTORY PLATFORM</div>
+      <h1 class="hero-heading">Medicine availability,<br><em>beautifully simplified.</em></h1>
+      <p class="hero-text">A premium stock visibility platform for doctors, clinics and medical stores. Search medicines, view live demo stock and manage your catalog from one elegant workspace.</p>
+      <div class="hero-actions"><a class="btn btn-gold" href="/products.html" style="text-decoration:none">Explore medicines <span>↗</span></a><button class="text-btn" onclick="openAdmin()">Open inventory desk <span>→</span></button></div>
+      <div class="trust-row"><div><strong>01</strong><span>Fast search</span></div><div><strong>02</strong><span>Stock visibility</span></div><div><strong>03</strong><span>Admin control</span></div></div>
+    </div>
+    <div class="hero-card">
+      <div class="glass-glow"></div>
+      <div class="card-top"><span class="pill">LIVE DEMO STOCK</span><span class="live-dot">● Live</span></div>
+      <div class="medicine-feature">
+        <div class="feature-icon">Rx</div><div><div class="mini-label">AVAILABLE MEDICINE</div><h3 id="featuredName">Loading stock…</h3><p id="featuredPack">Checking current inventory</p></div>
+      </div>
+      <div class="stock-meter"><div><span>Availability</span><b id="featuredUnits">—</b></div><div class="meter"><i id="featuredStockBar" style="width:0%"></i></div></div>
+      <div class="card-bottom"><span id="featuredPrice">—</span><button id="featuredRequestButton" disabled>Add to request +</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="medicine-carousel" aria-label="Featured medicines">
+ <div class="medicine-carousel__track">
+  <div class="medicine-carousel__group">
+   <figure class="medicine-carousel__item"><img src="/images/PREGA%20M%20SR.jpg" alt="Prega M SR tablets"><figcaption>Prega M SR</figcaption></figure>
+   <figure class="medicine-carousel__item"><img src="/images/FRACSPEED.jpg" alt="Fracspeed tablets"><figcaption>Fracspeed</figcaption></figure>
+   <figure class="medicine-carousel__item"><img src="/images/ENZOCHYM%20AP.jpg" alt="Enzochym AP tablets"><figcaption>Enzochym AP</figcaption></figure>
+   <figure class="medicine-carousel__item"><img src="/images/COLLASHIELD.jpg" alt="Collashield tablets"><figcaption>Collashield</figcaption></figure>
+   <figure class="medicine-carousel__item"><img src="/images/CALCITON%20NS.jpg" alt="Calciton NS nasal solution"><figcaption>Calciton NS</figcaption></figure>
+  </div>
+  <div class="medicine-carousel__group" aria-hidden="true">
+   <figure class="medicine-carousel__item"><img src="/images/PREGA%20M%20SR.jpg" alt=""><figcaption>Prega M SR</figcaption></figure>
+   <figure class="medicine-carousel__item"><img src="/images/FRACSPEED.jpg" alt=""><figcaption>Fracspeed</figcaption></figure>
+   <figure class="medicine-carousel__item"><img src="/images/ENZOCHYM%20AP.jpg" alt=""><figcaption>Enzochym AP</figcaption></figure>
+   <figure class="medicine-carousel__item"><img src="/images/COLLASHIELD.jpg" alt=""><figcaption>Collashield</figcaption></figure>
+   <figure class="medicine-carousel__item"><img src="/images/CALCITON%20NS.jpg" alt=""><figcaption>Calciton NS</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="features-section" aria-labelledby="featuresHeading">
+ <div class="container">
+  <h2 id="featuresHeading">Key Features of <span>Medicine Inventory Management</span></h2>
+  <div class="features-grid">
+   <article class="feature-tile">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="m24 5 16 9v19l-16 9-16-9V14l16-9Z"/><path d="m8 14 16 9 16-9M24 23v19M16 9l16 9M32 9l-16 9"/></svg>
+    <h3>Centralized Medicine Catalog</h3>
+    <p>Keep medicine names, categories, prices, and stock information together in one searchable catalog.</p>
+   </article>
+   <article class="feature-tile">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 6h17l8 8v27H12zM29 6v9h8M18 23h13M18 29h13M18 35h8"/><path d="M7 12v31h25"/></svg>
+    <h3>Add and Manage Stock</h3>
+    <p>Add medicines, update quantities and prices, and manage product images from the inventory desk.</p>
+   </article>
+   <article class="feature-tile">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 39h32M12 34V13h24v21M17 18h14M17 23h14M17 28h8"/><path d="M20 7h20v21"/></svg>
+    <h3>Live Inventory Snapshot</h3>
+    <p>See current medicine counts, total units, categories, and low-stock indicators at a glance.</p>
+   </article>
+   <article class="feature-tile">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6a16 16 0 1 0 15 10"/><path d="M24 13v11l8 5M31 7h10v10M41 7 29 19"/></svg>
+    <h3>Medicine Request Workflow</h3>
+    <p>Customers can select available medicines and submit a request with their contact details and notes.</p>
+   </article>
+   <article class="feature-tile">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="21" cy="21" r="13"/><path d="m31 31 10 10M15 21h12M21 15v12"/></svg>
+    <h3>Low-Stock Alerts</h3>
+    <p>Quickly identify medicines with low or empty stock so they can be reviewed and replenished.</p>
+   </article>
+   <article class="feature-tile">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 8h24v32H12zM18 16h12M18 22h12M18 28h7"/><path d="m27 34 4 4 9-10"/></svg>
+    <h3>Track Customer Requests</h3>
+    <p>Review saved medicine requests in the admin area and export locally stored inventory and request data.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="provider-section" aria-labelledby="providerHeading">
+ <div class="container">
+  <div class="provider-heading">
+   <h2 id="providerHeading">Medical shops across<br><span>Telangana</span></h2>
+   <p>Pharmacy listings in Hyderabad, Warangal, Karimnagar, and Nizamabad.</p>
+  </div>
+  <div class="provider-carousel">
+   <button class="provider-arrow" type="button" aria-label="Scroll provider categories left" onclick="scrollProviderCategories(-1)">‹</button>
+   <div class="provider-track" id="providerTrack" aria-label="Nearby medical shops" tabindex="0">
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Vijaya+Lakshmi+Ayurvedic+Medicine+Shop+Old+Nallakunta+Hyderabad" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56V15h30v41M38 29h18v27M18 24h10M18 34h10M18 44h10M45 38h5M45 47h5M4 56h56M27 15V7h-8v8" /></svg>
+     <strong>Vijaya Lakshmi Ayurvedic Medicine Shop</strong>
+     <small>Old Nallakunta</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=MedPlus+Vegetable+Market+Road+New+Nallakunta+Hyderabad" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M23 12a12 12 0 0 1 17 17L29 40a12 12 0 0 1-17-17l7-7M41 52a12 12 0 0 1-17-17l11-11a12 12 0 0 1 17 17l-7 7M23 41l18-18" /></svg>
+     <strong>MedPlus Vegetable Market Road</strong>
+     <small>New Nallakunta</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Saince+Pharmacy+Shankarmutt+Hyderabad" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M23 12a12 12 0 0 1 17 17L29 40a12 12 0 0 1-17-17l7-7M41 52a12 12 0 0 1-17-17l11-11a12 12 0 0 1 17 17l-7 7M23 41l18-18" /></svg>
+     <strong>Saince Pharmacy Shankarmutt</strong>
+     <small>Shankarmutt</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Apollo+Pharmacy+Nallakunta+Hyderabad" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56h48M13 56V25h38v31M8 25l24-17 24 17M23 56V39h18v17M22 28h4M38 28h4" /></svg>
+     <strong>Apollo Pharmacy Nallakunta</strong>
+     <small>Vegetable Market Road</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Sri+Sai+Srinivasa+Medical+General+Stores+Hyderabad" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56h48M13 56V25h38v31M8 25l24-17 24 17M23 56V39h18v17M22 28h4M38 28h4" /></svg>
+     <strong>Sri Sai Srinivasa Medical &amp; General Stores</strong>
+     <small>Near Fever Hospital</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Karuna+Medical+Hall+Shankarmutt+Hyderabad" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56h48M13 56V25h38v31M8 25l24-17 24 17M23 56V39h18v17M22 28h4M38 28h4" /></svg>
+     <strong>Karuna Medical Hall</strong>
+     <small>Near Shankarmutt bus stop</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=A2Z+Medical+%26+Surgicals+Warangal+Telangana" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M23 12a12 12 0 0 1 17 17L29 40a12 12 0 0 1-17-17l7-7M41 52a12 12 0 0 1-17-17l11-11a12 12 0 0 1 17 17l-7 7M23 41l18-18" /></svg>
+     <strong>A2Z Medical &amp; Surgicals</strong>
+     <small>Warangal · MGM Road</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=MedPlus+Franchise+Sri+Ganapathi+Medical+General+Stores+Kareemabad+Warangal" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56h48M13 56V25h38v31M8 25l24-17 24 17M23 56V39h18v17M22 28h4M38 28h4" /></svg>
+     <strong>Sri Ganapathi Medical &amp; General Stores</strong>
+     <small>Kareemabad · Warangal</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Keerthy+Medical+Stores+Pvt+Ltd+Karimnagar+Telangana" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56h48M13 56V25h38v31M8 25l24-17 24 17M23 56V39h18v17M22 28h4M38 28h4" /></svg>
+     <strong>Keerthy Medical Stores</strong>
+     <small>Karimnagar · Ambedkar Road</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Jeevanaraksha+Generic+Medical+Store+Karimnagar+Telangana" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M23 12a12 12 0 0 1 17 17L29 40a12 12 0 0 1-17-17l7-7M41 52a12 12 0 0 1-17-17l11-11a12 12 0 0 1 17 17l-7 7M23 41l18-18" /></svg>
+     <strong>Jeevanaraksha Generic Medical Store</strong>
+     <small>Karimnagar</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Aparna+Medical+and+General+Stores+Nizamabad+Telangana" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56h48M13 56V25h38v31M8 25l24-17 24 17M23 56V39h18v17M22 28h4M38 28h4" /></svg>
+     <strong>Aparna Medical &amp; General Stores</strong>
+     <small>Nizamabad</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Day+and+Night+Medical+Shop+Nizamabad+Telangana" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M23 12a12 12 0 0 1 17 17L29 40a12 12 0 0 1-17-17l7-7M41 52a12 12 0 0 1-17-17l11-11a12 12 0 0 1 17 17l-7 7M23 41l18-18" /></svg>
+     <strong>Day &amp; Night Medical Shop</strong>
+     <small>Nizamabad · RP Road</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Apollo+Pharmacy+Nizamabad+Telangana" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56h48M13 56V25h38v31M8 25l24-17 24 17M23 56V39h18v17M22 28h4M38 28h4" /></svg>
+     <strong>Apollo Pharmacy Nizamabad</strong>
+     <small>Karimnagar–Nizamabad Road</small>
+    </a>
+    <a class="provider-mark" href="https://www.google.com/maps/search/?api=1&query=Sai+Rukmini+Medical+Nizamabad+Telangana" target="_blank" rel="noopener noreferrer">
+     <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56h48M13 56V25h38v31M8 25l24-17 24 17M23 56V39h18v17M22 28h4M38 28h4" /></svg>
+     <strong>Sai Rukmini Medical</strong>
+     <small>Nizamabad · Vinayak Nagar</small>
+    </a>
+   </div>
+   <button class="provider-arrow" type="button" aria-label="Scroll provider categories right" onclick="scrollProviderCategories(1)">›</button>
+  </div>
+  <p class="provider-source">Listings from <a href="https://www.google.com/maps/search/medical+shops+Telangana" target="_blank" rel="noopener noreferrer">Google Maps</a>. Names and availability may change; please confirm details before visiting.</p>
+ </div>
+</section>
+
+<section id="how" class="dark-section">
+ <div class="container">
+  <div class="section-heading light"><div><div class="eyebrow"><span></span> SIMPLE WORKFLOW</div><h2>Built for the way medicine moves.</h2></div><p>Designed as a practical starting point for pharmacies, distributors, clinics and doctors.</p></div>
+  <div class="steps"><a class="workflow-step" href="/products.html"><span>01</span><h3>Search</h3><p>Find a medicine by name, generic, brand or category.</p></a><button class="workflow-step" type="button" onclick="scrollToSection('admin')"><span>02</span><h3>Check stock</h3><p>See and manage current inventory in the inventory desk.</p></button><a class="workflow-step" href="/products.html"><span>03</span><h3>Request</h3><p>Add medicines to a request and capture customer details.</p></a><button class="workflow-step" type="button" onclick="openAdmin()"><span>04</span><h3>Manage</h3><p>Use the inventory desk to add, update or remove stock.</p></button></div>
+ </div>
+</section>
+
+<section id="admin" class="section admin-section">
+ <div class="container">
+  <div class="section-heading"><div><div class="eyebrow"><span></span> INVENTORY DESK</div><h2>Admin control, without the clutter.</h2></div><button class="btn btn-dark" onclick="openAdmin()">Manage inventory →</button></div>
+  <div class="admin-preview"><div><span class="admin-icon">▦</span><div><b>Macvista Pharmaceuticals Pvt Ltd Control Center</b><p>Administrator sign-in required to manage inventory and requests.</p></div></div><div class="admin-tags"><button type="button" onclick="showStockAlerts()">Stock alerts</button><button type="button" onclick="openImageUpload()">Image upload</button><button type="button" onclick="showCapturedOrders()">Order capture</button><button type="button" onclick="showLocalStorage()">Local JSON storage</button></div></div>
+ </div>
+</section>
+</main>
+
+<section class="stories-section" aria-labelledby="storiesHeading">
+ <div class="container">
+  <div class="stories-heading">
+   <span class="stories-eyebrow">SAMPLE CUSTOMER STORY</span>
+   <h2 id="storiesHeading">Designed for <span>everyday pharmacy work</span></h2>
+   <p>An illustrative example of how a team might use Macvista Pharmaceuticals Pvt Ltd to keep inventory visible and requests organized.</p>
+  </div>
+  <article class="story-card">
+   <div class="story-label" aria-label="Illustrative sample, not a verified review">
+    <span class="story-label-icon" aria-hidden="true">✦</span>
+    <strong>Sample<br>feedback</strong>
+    <small>Demo content</small>
+   </div>
+   <div class="story-quote">
+    <span class="quote-mark" aria-hidden="true">“</span>
+    <blockquote>A searchable medicine catalog and a simple stock view can make it easier for a pharmacy team to review availability and organize customer requests.</blockquote>
+    <p class="story-attribution">Illustrative sample · Not a verified customer review</p>
+   </div>
+  </article>
+ </div>
+</section>
+
+<div id="modal" class="modal hidden"><div class="modal-panel"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<footer class="site-footer">
+ <div class="container footer-content">
+  <a class="footer-brand" href="#home" aria-label="Macvista Pharmaceuticals Pvt Ltd home">
+   <img class="footer-logo" src="/assets/macvista-logo.png" alt="Macvista Pharmaceuticals Pvt Ltd logo">
+   <span class="footer-brand-copy"><strong>Macvista<span> Pharmaceuticals Pvt Ltd</span></strong><small>WE SERVE PATIENT TO IMPROVE QUALITY OF LIFE</small></span>
+  </a>
+  <nav class="footer-column" aria-label="Company">
+   <h2>Explore</h2>
+   <a href="/#home">Home</a>
+   <a href="/#how">About the platform</a>
+   <a href="/#admin">Inventory desk</a>
+  </nav>
+  <div class="footer-column">
+   <h2>Contact</h2>
+   <a href="/products.html">Request a medicine</a>
+   <button type="button" onclick="openAdmin()">Administrator access</button>
+  </div>
+  <div class="footer-column footer-location">
+   <h2>Location</h2>
+   <address>Help Pharmacy,<br>Shankarmutt Market,<br>Old Nallakunta,<br>Hyderabad - 500044</address>
+   <a href="https://www.google.com/maps/search/?api=1&query=Help+Pharmacy%2C+Shankarmutt+Market%2C+Old+Nallakunta%2C+Hyderabad+500044" target="_blank" rel="noopener noreferrer">View on map</a>
+  </div>
+  <div class="footer-column footer-socials">
+   <h2>Socials</h2>
+   <div class="social-links" aria-label="Social platforms">
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+     <svg class="social-icon youtube-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg>
+     <span>YouTube</span>
+    </a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+     <svg class="social-icon instagram-icon" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="instagram-gradient" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#ffd776"/><stop offset=".5" stop-color="#f54f60"/><stop offset="1" stop-color="#9b36b7"/></linearGradient></defs><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm5 2.3a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm0 2.2a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6Zm5.7-3.1a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Z" fill="url(#instagram-gradient)"/></svg>
+     <span>Instagram</span>
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+     <svg class="social-icon linkedin-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2ZM8 19H5V9h3v10ZM6.5 7.6a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-4.9c0-1.2 0-2.7-1.7-2.7s-2 1.3-2 2.6V19h-3V9h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.7 2 3.7 4.7V19Z"/></svg>
+     <span>LinkedIn</span>
+    </a>
+    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+     <svg class="social-icon x-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.7 5.6 22H2.4l7.3-8.4L1.9 2h6.5l4.5 6.7L18.9 2Zm-1.1 18h1.7L7.4 3.9H5.6L17.8 20Z"/></svg>
+     <span>X</span>
+    </a>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+     <svg class="social-icon facebook-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.6.2 2.6.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12Z"/></svg>
+     <span>Facebook</span>
+    </a>
+   </div>
+  </div>
+ </div>
+ <div class="container footer-bottom"><span>Macvista Pharmaceuticals Pvt Ltd</span><span>Medicine availability · Inventory management</span></div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+.provider-section {
+  padding: 58px 0 64px;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.provider-heading {
+  text-align: center;
+}
+
+.provider-heading h2 {
+  margin: 0;
+  color: #262d35;
+  font: 700 clamp(28px, 3.5vw, 38px)/1.12 "DM Sans", Arial, sans-serif;
+  letter-spacing: -.8px;
+}
+
+.provider-heading h2 span {
+  color: #75a834;
+}
+
+.provider-heading p {
+  margin: 18px auto 0;
+  color: #464b50;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.provider-carousel {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 34px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 38px;
+}
+
+.provider-track {
+  display: grid;
+  grid-auto-columns: minmax(150px, 1fr);
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 22px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 8px 2px 14px;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.provider-track::-webkit-scrollbar {
+  display: none;
+}
+
+.provider-mark {
+  display: flex;
+  min-height: 104px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #667078;
+  scroll-snap-align: center;
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.provider-mark svg {
+  width: 49px;
+  height: 49px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.6;
+  opacity: .8;
+}
+
+.provider-mark strong {
+  color: #565e65;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .15px;
+}
+
+.provider-mark small {
+  color: #818990;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.provider-mark:hover strong,
+.provider-mark:focus-visible strong {
+  color: #557e2b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.provider-source {
+  margin: 10px 0 0;
+  color: #737b80;
+  font-size: 10px;
+  text-align: center;
+}
+
+.provider-source a {
+  color: #557e2b;
+}
+
+.provider-arrow {
+  display: grid;
+  width: 34px;
+  height: 44px;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: #aab0b3;
+  cursor: pointer;
+  font: 400 34px/1 "DM Sans", Arial, sans-serif;
+}
+
+.provider-arrow:hover,
+.provider-arrow:focus-visible {
+  color: #70814a;
+  outline: 2px solid rgba(117, 168, 52, .4);
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .provider-section {
+    padding: 44px 0 48px;
+  }
+
+  .provider-heading h2 {
+    font-size: 28px;
+  }
+
+  .provider-heading p {
+    max-width: 340px;
+    font-size: 13px;
+  }
+
+  .provider-carousel {
+    grid-template-columns: 26px minmax(0, 1fr) 26px;
+    gap: 4px;
+    margin-top: 25px;
+  }
+
+  .provider-track {
+    grid-auto-columns: minmax(130px, 55%);
+    gap: 12px;
+  }
+
+  .provider-arrow {
+    width: 26px;
+    font-size: 28px;
+  }
+}

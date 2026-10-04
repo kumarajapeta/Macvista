@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f5ef">
+<title>Products | Macvista Pharmaceuticals Pvt Ltd</title>
+<meta name="description" content="Search Macvista Pharmaceuticals Pvt Ltd's medicine catalog by medicine, generic name, brand, or category.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="brand-layout.css">
+<link rel="stylesheet" href="catalog-controls.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="products-page.css">
+</head>
+<body>
+<header class="topbar">
+ <div class="container nav">
+  <a class="brand" href="/" aria-label="Macvista Pharmaceuticals Pvt Ltd home"><img class="brand-logo" src="/assets/macvista-logo.png" alt="Macvista Pharmaceuticals Pvt Ltd logo"><span>Macvista<span> Pharmaceuticals Pvt Ltd</span><small>WE SERVE PATIENT TO IMPROVE QUALITY OF LIFE</small></span></a>
+  <nav><a href="/">Home</a><a href="/products.html" aria-current="page">Products</a><a href="/#how">How it works</a><a href="/#admin">Admin</a></nav>
+  <a class="btn btn-dark" href="#catalog" style="text-decoration:none">Browse products <span>↓</span></a>
+ </div>
+</header>
+<main>
+ <section class="products-intro">
+  <div class="container">
+   <div class="eyebrow"><span></span> MACVISTA PHARMACEUTICALS PVT LTD</div>
+   <h1>Medicine catalog</h1>
+   <p>Search medicines by name, generic, or brand, or filter the catalog by category.</p>
+  </div>
+ </section>
+ <section class="stats-strip" aria-label="Inventory summary">
+  <div class="container stats">
+   <div><b id="statMedicines">—</b><span>Medicines listed</span></div>
+   <div><b id="statUnits">—</b><span>Units visible</span></div>
+   <div><b id="statLow">—</b><span>Low-stock alerts</span></div>
+   <div><b id="statCategories">—</b><span>Categories</span></div>
+  </div>
+ </section>
+ <section id="catalog" class="section">
+  <div class="container">
+   <div class="section-heading"><div><div class="eyebrow"><span></span> PREMIUM CATALOG</div><h2>Find what you need.</h2></div><p>Search by medicine, generic name, brand or category. Stock shown is demo inventory until you connect your own database.</p></div>
+   <div class="toolbar">
+    <label class="toolbar-field"><span>Search medicines</span><div class="search"><span aria-hidden="true">⌕</span><input id="search" aria-label="Search medicines" placeholder="Name, generic, or brand" oninput="loadMedicines()"></div></label>
+    <label class="toolbar-field"><span>Category</span><select id="category" aria-label="Filter by category" onchange="loadMedicines()"><option value="all">All categories</option></select></label>
+    <button class="filter-btn toolbar-refresh" type="button" onclick="refreshCatalog(this)"><span aria-hidden="true">↻</span> Refresh results</button>
+    <span class="toolbar-status" id="catalogRefreshStatus" role="status" aria-live="polite"></span>
+   </div>
+   <div id="catalogGrid" class="medicine-grid"></div>
+  </div>
+ </section>
+</main>
+<div id="modal" class="modal hidden"><div class="modal-panel"><button class="close" onclick="closeModal()" aria-label="Close">×</button><div id="modalContent"></div></div></div>
+<footer class="site-footer">
+ <div class="container footer-content">
+  <a class="footer-brand" href="/" aria-label="Macvista Pharmaceuticals Pvt Ltd home"><img class="footer-logo" src="/assets/macvista-logo.png" alt="Macvista Pharmaceuticals Pvt Ltd logo"><span class="footer-brand-copy"><strong>Macvista<span> Pharmaceuticals Pvt Ltd</span></strong><small>WE SERVE PATIENT TO IMPROVE QUALITY OF LIFE</small></span></a>
+  <nav class="footer-column" aria-label="Explore"><h2>Explore</h2><a href="/">Home</a><a href="/#how">About the platform</a><a href="/#admin">Inventory desk</a></nav>
+  <div class="footer-column"><h2>Contact</h2><a href="/products.html">Request a medicine</a><button type="button" onclick="openAdmin()">Administrator access</button></div>
+  <div class="footer-column footer-location"><h2>Location</h2><address>Help Pharmacy,<br>Shankarmutt Market,<br>Old Nallakunta,<br>Hyderabad - 500044</address><a href="https://www.google.com/maps/search/?api=1&amp;query=Help+Pharmacy%2C+Shankarmutt+Market%2C+Old+Nallakunta%2C+Hyderabad+500044" target="_blank" rel="noopener noreferrer">View on map</a></div>
+ </div>
+ <div class="container footer-bottom"><span>Macvista Pharmaceuticals Pvt Ltd</span><span>Medicine availability · Inventory management</span></div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "inputs": [
+    {
+      "id": "adminUsername",
+      "type": "promptString",
+      "description": "Macvista Pharmaceuticals Pvt Ltd administrator username"
+    },
+    {
+      "id": "adminPassword",
+      "type": "promptString",
+      "description": "Macvista Pharmaceuticals Pvt Ltd administrator password",
+      "password": true
+    }
+  ],
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Macvista Pharmaceuticals Pvt Ltd",
+      "program": "${workspaceFolder}/server.js",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "env": {
+        "PORT": "3000",
+        "MEDICINESTOCK_ADMIN_USERNAME": "${input:adminUsername}",
+        "MEDICINESTOCK_ADMIN_PASSWORD": "${input:adminPassword}"
+      },
+      "serverReadyAction": {
+        "pattern": "Macvista Pharmaceuticals Pvt Ltd running at (https?://\\S+)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      }
+    }
+  ]
+}

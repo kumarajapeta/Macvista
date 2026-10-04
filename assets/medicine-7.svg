@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#cbb9ad"/><ellipse cx="400" cy="405" rx="190" ry="25" fill="#000" opacity=".08"/>
+<g transform="translate(280 80)"><rect x="35" y="20" width="170" height="300" rx="18" fill="#faf9f4" stroke="#3a3935" stroke-width="3"/>
+<rect x="35" y="80" width="170" height="150" fill="#1e211f"/><text x="120" y="135" text-anchor="middle" fill="#d6b77c" font-family="Georgia" font-size="25">RX</text>
+<text x="120" y="168" text-anchor="middle" fill="#fff" font-family="Arial" font-size="13">Macvista Pharmaceuticals Pvt Ltd</text><text x="120" y="190" text-anchor="middle" fill="#bbb" font-family="Arial" font-size="9">YOUR HEALTH</text>
+<rect x="65" y="255" width="110" height="5" fill="#d0ad70"/><rect x="80" y="275" width="80" height="4" fill="#bbb"/></g></svg>

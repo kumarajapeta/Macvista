@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Macvista Pharmaceuticals Pvt Ltd logo</title>
+  <circle cx="48" cy="48" r="44" fill="#fff8e8" stroke="#d89a2b" stroke-width="4"/>
+  <circle cx="48" cy="48" r="36" fill="#fff" stroke="#176b50" stroke-width="2"/>
+  <g fill="#e6a52e">
+    <path d="M46 9h4v10h-4zM46 77h4v10h-4zM9 46h10v4H9zM77 46h10v4H77z"/>
+    <path d="m20.8 18 7.1 7.1-2.8 2.8-7.1-7.1zM70.9 68.1l7.1 7.1-2.8 2.8-7.1-7.1zM75.2 18l2.8 2.8-7.1 7.1-2.8-2.8zM25.1 68.1l2.8 2.8-7.1 7.1-2.8-2.8z"/>
+  </g>
+  <path d="M48 23 31 30v14c0 13 7 22 17 28 10-6 17-15 17-28V30z" fill="#176b50"/>
+  <path d="M44 32h8v8h8v8h-8v8h-8v-8h-8v-8h8z" fill="#fff"/>
+  <path d="m39 61 6 5 12-13" fill="none" stroke="#e6a52e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>

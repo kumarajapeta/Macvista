@@ -1,0 +1,24 @@
+.products-intro {
+  padding: 52px 0 40px;
+  background: linear-gradient(180deg, #faf8f2, #f7f5ef);
+}
+
+.products-intro h1 {
+  margin: 14px 0 8px;
+  font: 700 clamp(36px, 5vw, 52px)/1.05 "Playfair Display", Georgia, serif;
+  letter-spacing: -1.5px;
+}
+
+.products-intro p {
+  max-width: 600px;
+  margin: 0;
+  color: #6f6d66;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .products-intro {
+    padding: 38px 0 28px;
+  }
+}

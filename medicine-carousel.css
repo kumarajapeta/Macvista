@@ -1,0 +1,72 @@
+.medicine-carousel {
+  overflow: hidden;
+  padding: 20px 0;
+  background: #fff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.medicine-carousel__track,
+.medicine-carousel__group {
+  display: flex;
+  width: max-content;
+}
+
+.medicine-carousel__track {
+  animation: medicine-carousel-scroll 38s linear infinite;
+}
+
+.medicine-carousel__group {
+  flex: 0 0 auto;
+  gap: 18px;
+  padding-right: 18px;
+}
+
+.medicine-carousel__item {
+  display: flex;
+  flex: 0 0 210px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 190px;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.medicine-carousel__item img {
+  display: block;
+  width: 100%;
+  height: 138px;
+  object-fit: contain;
+}
+
+.medicine-carousel__item figcaption {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.medicine-carousel:hover .medicine-carousel__track {
+  animation-play-state: paused;
+}
+
+@keyframes medicine-carousel-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .medicine-carousel {
+    overflow-x: auto;
+  }
+
+  .medicine-carousel__track {
+    animation: none;
+  }
+}

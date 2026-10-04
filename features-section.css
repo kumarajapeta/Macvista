@@ -1,0 +1,128 @@
+.features-section {
+  padding: 58px 0 64px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.features-section h2 {
+  margin: 0 0 28px;
+  color: #2a3036;
+  font: 700 clamp(22px, 3vw, 30px)/1.25 "DM Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+.features-section h2 span {
+  color: #6e9c36;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.feature-tile {
+  display: flex;
+  min-height: 170px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 20px;
+  border: 1px solid #d8d8d4;
+  border-radius: 4px;
+  background: #fff;
+  text-align: center;
+  transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+.feature-tile:hover {
+  transform: translateY(-3px);
+  border-color: #9cbd72;
+  box-shadow: 0 10px 24px rgba(38, 55, 27, .08);
+}
+
+.feature-tile svg {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 12px;
+  fill: none;
+  stroke: #76a93f;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.feature-tile h3 {
+  margin: 0 0 8px;
+  color: #26313a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.feature-tile p {
+  max-width: 270px;
+  margin: 0;
+  color: #697179;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.steps > a.workflow-step {
+  display: block;
+  min-height: 190px;
+  padding: 28px;
+  background: #191a18;
+  color: inherit;
+  text-decoration: none;
+}
+
+.steps > a.workflow-step:hover,
+.steps > a.workflow-step:focus-visible {
+  background: #242521;
+  outline: 2px solid var(--gold);
+  outline-offset: -2px;
+}
+
+@media (max-width: 700px) {
+  .features-section {
+    padding: 44px 0 48px;
+  }
+
+  .features-section h2 {
+    margin-bottom: 22px;
+    font-size: 24px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .feature-tile {
+    min-height: 182px;
+    padding: 18px 13px;
+  }
+
+  .steps > a.workflow-step {
+    min-height: 150px;
+    padding: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .features-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-tile {
+    transition: none;
+  }
+
+  .feature-tile:hover {
+    transform: none;
+  }
+}
